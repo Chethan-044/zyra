@@ -1,10 +1,10 @@
-#🎯 Objective
+🎯 Objective
 
 This project was built as part of my journey to strengthen MERN stack fundamentals, focusing on backend development, authentication, and server-side rendering using EJS.
 It demonstrates how a full-stack web application connects the frontend, backend, and database layers to create a complete workflow.
 
-#⚙️ Functionality
-##🧑‍💼 Admin
+⚙️ Functionality
+🧑‍💼 Admin
 
 Login to the /owners/admin dashboard
 
@@ -14,7 +14,7 @@ Products are stored in MongoDB (including image buffer data)
 
 Flash message confirms successful creation
 
-##🧑‍💻 User
+🧑‍💻 User
 
 Register, login, and logout securely using JWT
 
@@ -25,7 +25,7 @@ Add products to the cart
 Cart automatically calculates discount and platform fee before checkout
 
 
-##🧱 Core Concepts Implemented
+🧱 Core Concepts Implemented
 
 🔐 Authentication & Authorization using JWT stored in cookies
 
@@ -42,7 +42,7 @@ Cart automatically calculates discount and platform fee before checkout
 🗃️ Database Modeling using Mongoose schemas & validations
 
 
-##🛠️ Key Files & Roles
+🛠️ Key Files & Roles
 File	Description
 app.js	Entry point – sets up middleware, routes, and session management
 config/mongoose-connection.js	Connects MongoDB using config for flexible environments
@@ -53,7 +53,7 @@ views/shop.ejs	Renders products dynamically for users
 views/createproducts.ejs	Admin interface for adding new products
 
 
-###🧩 What I Learned
+🧩 What I Learned
 
 Implemented user authentication and token-based security
 
@@ -69,7 +69,7 @@ Built a scalable backend ready for feature expansion
 
 
 
-##💡 Future improvement
+💡 Future improvement
 
 🔑 Add admin authentication
 
