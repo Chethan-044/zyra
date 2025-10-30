@@ -1,0 +1,9 @@
+/* Set font for all elements */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Optional: custom font for headings */
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
+}

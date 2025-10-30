@@ -1,0 +1,17 @@
+const mongoose = require("mongoose");
+const config = require("config"); //npm i config
+
+
+const dbgr = require("debug")("development:mongoose");
+
+mongoose
+.connect(`${config.get("MONGODB_URI")}/zyra`)
+.then(function(){
+    dbgr("connected");
+})
+.catch(function(err){
+    dbgr(err);
+    
+})
+
+mongoose.exports= mongoose.connection;
