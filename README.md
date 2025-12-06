@@ -1,67 +1,111 @@
-🎯 Objective
+# 🛍️ MERN Stack E-Commerce Application (EJS + Node.js + MongoDB)
 
-This project was built as part of my journey to strengthen MERN stack fundamentals, focusing on backend development, authentication, and server-side rendering using EJS. It demonstrates how a full-stack web application connects the frontend, backend, and database layers to create a complete workflow.
+A full-stack MERN-style project focused on backend development, authentication, and server-side rendering using **EJS**.  
+This application demonstrates complete workflow integration between **frontend, backend, and database layers**.
 
-⚙️ Functionality 🧑‍💼 Admin
+---
 
-Login to the /owners/admin dashboard
+## 🎯 Objective
 
-Add new products with image upload, price, discount, and color
+This project was built as part of my journey to strengthen **MERN stack fundamentals**, focusing mainly on:
 
-Products are stored in MongoDB (including image buffer data)
+- Backend architecture  
+- Authentication  
+- Session handling  
+- Server-side rendering (SSR)  
+- Database modeling  
 
-Flash message confirms successful creation
+It represents how a real-world application connects **UI → Backend → Database** in a seamless workflow.
 
-🧑‍💻 User
+---
 
-Register, login, and logout securely using JWT
+## ⚙️ Functionality
 
-Browse products listed by the admin
+### 🧑‍💼 **Admin Features**
 
-Add products to the cart
+- Login to the `/owners/admin` dashboard  
+- Add new products with:
+  - Image upload  
+  - Price  
+  - Discount  
+  - Color options  
+- Products stored in MongoDB (includes **image buffer data**)  
+- Flash message confirms successful product creation  
 
-Cart automatically calculates discount and platform fee before checkout
+---
 
-🧱 Core Concepts Implemented
+### 🧑‍💻 **User Features**
 
-🔐 Authentication & Authorization using JWT stored in cookies
+- Secure Register, Login, Logout using **JWT**
+- Browse products added by the admin
+- Add items to cart
+- Cart automatically calculates:
+  - Discount  
+  - Platform fee  
+- Checkout-ready cart system  
 
-🧩 Session Handling with express-session and connect-flash
+---
 
-🖼️ File Uploads via Multer (memory storage)
+## 🧱 Core Concepts Implemented
 
-🧭 RESTful API Design for modular route management
+| Concept | Description |
+|---------|-------------|
+| 🔐 **JWT Authentication** | Token-based login stored in HTTP-only cookies |
+| 🧩 **Sessions & Flash Messages** | Using `express-session` + `connect-flash` |
+| 🖼️ **Multer Uploads** | Memory storage for product images |
+| 🧭 **RESTful Routing** | Clean and modular route structure |
+| 🧠 **MVC Architecture** | Proper separation of controllers, models, views |
+| 🎨 **EJS Server-Side Rendering** | Dynamic templates and partials |
+| 🗃️ **Mongoose Modeling** | Schema validation & MongoDB integration |
 
-🧠 MVC Architecture ensuring separation of concerns
+---
 
-🎨 Dynamic Server-Side Rendering with EJS
+## 🛠️ Key Files & Their Roles
 
-🗃️ Database Modeling using Mongoose schemas & validations
+| File | Description |
+|------|-------------|
+| `app.js` | Entry point — sets up middleware, sessions, cookies, and routes |
+| `config/mongoose-connection.js` | Connects MongoDB with environment support |
+| `config/multer-config.js` | Handles image uploads using Multer memory storage |
+| `controllers/authController.js` | Manages user register/login with bcrypt + JWT |
+| `models/product-model.js` | Product schema, validation & DB structure |
+| `views/shop.ejs` | Renders all products to users dynamically |
+| `views/createproducts.ejs` | Admin form for adding new products |
 
-🛠️ Key Files & Roles File Description app.js Entry point – sets up middleware, routes, and session management config/mongoose-connection.js Connects MongoDB using config for flexible environments config/multer-config.js Handles image uploads using Multer memory storage controllers/authController.js Manages user registration & login using bcrypt + JWT models/product-model.js Defines schema and validation for product management views/shop.ejs Renders products dynamically for users views/createproducts.ejs Admin interface for adding new products
+---
 
-🧩 What I Learned
+## 🧩 What I Learned
 
-Implemented user authentication and token-based security
+- Implemented secure user authentication using **JWT**
+- Built scalable **routes + controllers** using MVC
+- Managed sessions, cookies, and flash messaging in Express
+- Processed forms and image uploads using **Multer**
+- Rendered dynamic pages using **EJS partials & templates**
+- Designed a backend system ready for future enhancements
 
-Structured routes and controllers for scalability
+---
 
-Managed sessions, cookies, and flash messages in Express
+## 💡 Future Improvements
 
-Processed form data and file uploads with Multer
+- 🔑 Add dedicated **admin authentication**
+- 🔍 Add **sort, filter, and search** functionality
+- 🧾 Product categories + **pagination**
+- 👤 User dashboard for **order history + profile**
+- 💳 Integrate Payment Gateways (Razorpay/Stripe)
 
-Applied EJS for modular, reusable UI components
+---
 
-Built a scalable backend ready for feature expansion
+## 📌 Summary
 
-💡 Future improvement
+This project helped strengthen:
 
-🔑 Add admin authentication
+- Backend fundamentals  
+- Authentication logic  
+- Data modeling with MongoDB  
+- Server-side rendering  
+- File handling  
+- Real-world app structuring  
 
-🔍 Implement sort, filter, and search options
+---
 
-🧾 Introduce product categories & pagination
-
-👤 Build user dashboard for order history and profile management
-
-💳 Integrate payment gateway (Stripe/Razorpay) for checkout
+✨ *Feel free to fork, star ⭐, or contribute to this project!*
