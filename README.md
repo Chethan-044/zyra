@@ -3,6 +3,11 @@
 A full-stack MERN-style project focused on backend development, authentication, and server-side rendering using **EJS**.  
 This application demonstrates complete workflow integration between **frontend, backend, and database layers**.
 
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![React](https://img.shields.io/badge/React-61DBFB?style=for-the-badge&logo=react&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
 ---
 
 ## 🎯 Objective
