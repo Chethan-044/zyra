@@ -108,4 +108,3 @@ This project helped strengthen:
 
 ---
 
-✨ *Feel free to fork, star ⭐, or contribute to this project!*
